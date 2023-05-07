@@ -13,7 +13,6 @@ This document will guide you through the process of setting up and running the D
 - [Running Tests]
 - [API Documentation]
 - [Contributing]
-- [License]
 
 ## Prerequisites
 
