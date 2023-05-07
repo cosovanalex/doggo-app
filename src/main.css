@@ -6,12 +6,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
   
-  code {
+code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   }
   
   /* Login styles */
-  .login-hero {
+.login-hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,45 +21,44 @@ body {
     text-align: center;
   }
   
-  .login-logo {
+.login-logo {
     width: 100px;
     margin-bottom: 20px;
   }
   
-  .login-website-name {
+.login-website-name {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 50px;
   }
   
-  .login-container {
+.login-container {
     margin-top: 400px;
   }
   
   /* Video background styles */
-  .videoBackground,
-  .login-video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
-  
-  .search-video,
-  .login-video {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-  }
+.videoBackground,
+.login-video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.search-video,
+.login-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
   
   /* Pagination styles */
   .page-navigation {
@@ -302,6 +301,28 @@ body {
   .app-content {
     flex-grow: 1;
   }
-  
 
+  @media (max-width: 768px) {
+    .dog-cards-container.large .col-lg-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .col-sm-6, .col-md-4, .col-lg-3 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  
+    .sort-and-select-container {
+      flex-direction: column;
+    }
+  
+    .sort-buttons-wrapper {
+      margin-top: 10px;
+    }
+  
+    .login-container {
+      margin-top: 200px;
+    }
+  }
   
