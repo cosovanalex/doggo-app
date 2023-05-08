@@ -325,4 +325,11 @@ code {
       margin-top: 200px;
     }
   }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+  
   
