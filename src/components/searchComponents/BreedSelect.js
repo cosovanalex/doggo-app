@@ -3,6 +3,7 @@ import React from 'react';
 const BreedSelect = ({ selectedBreed, setSelectedBreed, breeds }) => (
   <div className="breed-select">
     <select
+      key={selectedBreed || 'empty'} // Add this line
       value={selectedBreed}
       onChange={(e) => setSelectedBreed(e.target.value)}
     >
