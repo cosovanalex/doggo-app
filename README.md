@@ -77,5 +77,3 @@ Contributions are always welcome! If you'd like to contribute to the Doggo App, 
 3. Commit your changes (`git commit -m 'Add some feature'`)
 4. Push to the branch (`git push origin feature/YourFeatureName`)
 5. Open a Pull Request
-
-For detailed information on the project structure and coding guidelines, please refer to the `CONTRIBUTING.md` file in the repository.
